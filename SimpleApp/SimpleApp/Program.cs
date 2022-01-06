@@ -1,2 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, can you C#?");
+String test = "Hello, can you C#?";
+Console.WriteLine(test);
+Console.WriteLine("This is the second WriteLine Statement...");
