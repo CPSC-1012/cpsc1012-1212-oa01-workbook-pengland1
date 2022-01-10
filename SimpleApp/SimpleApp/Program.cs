@@ -10,3 +10,17 @@ if (test2.ToLower() == "y" || test2.ToLower() == "n")
 else {
     Console.WriteLine("Input rejected");
 }
+
+/* Multi-line Comment
+**
+**
+**
+**
+**
+**
+**
+**
+**
+**
+**
+*/
