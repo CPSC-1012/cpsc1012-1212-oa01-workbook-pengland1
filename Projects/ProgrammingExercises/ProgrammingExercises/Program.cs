@@ -167,7 +167,7 @@ namespace ProgrammingExercises
          * Algorithm:
          *      Step 1) Store user inputs
          *      Step 2) Calculate future value using formula
-         *                  Step 1) futureVal = invAmount * (math.pow(1 + interestRate,years*12))
+         *                  Step 1) futureVal = invAmount * Math.Pow((1 + interestRate / 12), (years * 12));
          *      Step 3)  Output future value
          * 
          * Last Modified:2022-01-13
@@ -186,7 +186,7 @@ namespace ProgrammingExercises
             years = Double.Parse(Console.ReadLine());
 
             //Step 2) Calculate future value using formula
-            futureVal = invAmount * Math.Pow((1 + interestRate / 12), (years * 12));
+            futureVal = invAmount * Math.Pow(1.0 + ((interestRate / 100) / 12.0), 12.0 * years);
 
             //Step 3)  Output future value
             Console.WriteLine($"Future value is {futureVal:C}");
